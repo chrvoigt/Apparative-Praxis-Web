@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+    /* Uhrzeigersinn: /* top | right | bottom | left */
+    margin: 0 10% 0 10%;
+}
+
+nav {
+    background-color: #9F9F9F;
+    padding: 1em;
+}
+
+main {
+    background-color: #d2d2d2;
+    text-align: center;
+}
+
+h2 {
+    /* Uhrzeigersinn: /* top | right | bottom | left */
+    padding: 0px 10px 10px 0px;
+    margin-top: 0;
+}
+
+.eigene_spalten {
+    column-count: 4;
+    column-width: 14em;
+    text-align: justify;
+    padding: 20px;
+}
+
+.spaltentext {
+    margin: 0;
+    padding: 20px;
+
+    column-width: 14em;
+    column-count: 3;
+    column-gap: 3em;
+
+    text-align: left;
+    font-size: small;
+}
+
+p {
+    padding-bottom: 20px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<!--
+(1) create an html page and a  css style with 3 clickable areas.
+areas should have rounded corners. colours should resemble instagram
+
+(2) give me a css centring the three boxes
+
+(3) own correction: justify-content: space-around; // in .container { ... }
+-->
+
+<head>
+    <title>Clickable Areas</title>
+    <style>
+        /* CSS for clickable areas */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .clickable-area {
+            width: 100px;
+            height: 200px;
+            background-color: rgb(189, 200, 219);
+            border-radius: 40px;
+            border: 3px solid #06285e;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .clickable-area:hover {
+            background-color: #FCAF88;
+        }
+
+        .extra-area {
+            width: 100px;
+            height: 200px;
+            background-color: rgb(129, 147, 119);
+            border-radius: 40px;
+            border: 1px solid #E9E9E9;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="clickable-area"><a href="">click me </a> </div>
+    <div class="clickable-area"></div>
+    <div class="clickable-area"></div>
+    <div class="extra-area"></div>
+    <div class="extra-area"></div>
+</div>
+</body>
+</html>

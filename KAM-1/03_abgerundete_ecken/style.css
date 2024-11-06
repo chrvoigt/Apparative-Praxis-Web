@@ -1,0 +1,84 @@
+body {
+    font-family: sans-serif;
+    /* Uhrzeigersinn: /* top | right | bottom | left */
+    margin: 0 10% 0 10%;
+    background-color: rgba(128, 146, 118, 0.56);
+}
+
+
+main {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    margin-bottom: 1em;
+}
+
+h2 {
+    /* Uhrzeigersinn: /* top | right | bottom | left */
+    padding: 0 10px 10px 0;
+    margin-top: 0;
+}
+
+header {
+    width: max-content;
+    padding: 1em 1em 1em 0;
+
+    font-weight: 100;
+    /* für einen sticky header */
+    /*position: sticky;*/
+    /*top:1em;*/
+}
+
+.rund {
+    display: inline-block;
+
+    width: 70px;
+    height: 70px;
+
+    border-radius:50%;
+    /*border-width: 5px;*/
+    border-style: ridge;
+    background-color: white;
+
+    /* zentrierung erfolgt 'relativ' zum umgebenden Element, d.h. der Kreis */
+    position: relative;
+
+    overflow: hidden;
+}
+
+/* text im Kreis */
+.zentriert {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+/* image im Kreis */
+.round_image {
+    width: 100%; /* Bild auf die volle Breite der runden Sektion skalieren */
+    object-fit: cover;
+}
+
+.spaltentext {
+    margin-bottom: 20px;
+    padding: 20px;
+
+    column-width: 14em;
+    column-count: 3;
+    column-gap: 3em;
+
+    text-align: left;
+    font-size: small;
+
+    border-radius: 20px;
+    /* border-radius:20px 10px 20px 70px; */
+    border-width: 5px;
+    border-style: solid;
+    background-color: white;
+}
+
+

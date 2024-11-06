@@ -1,0 +1,19 @@
+body {
+    font: 1rem Verdana;
+    margin: 20px;
+    line-height: 2rem;
+}
+
+#seitenanfang {
+    font-style: italic;
+}
+
+p a {
+    color: orange;
+    font-weight: bold;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 5px;
+    text-decoration-color: green;
+    /* use text-decoration-line. ... Unterstreichen ausschalten */
+}
+

@@ -1,0 +1,52 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;}
+
+body {
+    background-color: rgba(255, 255, 0, 0.1);
+}
+
+p {
+    margin: 20px 40px; /* matches padding in nav */
+    color: #737f6b;
+    text-align: justify;
+}
+
+nav {
+    background-color: #819377;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px 40px 20px 40px;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+nav a:hover {
+    color: #819377;
+    background-color: white;
+}
+
+.non_active_page {
+    color: rgba(245, 248, 255, 0.9);
+    text-decoration-line: none;
+}
+
+.active_page {
+    color: #06285e;
+    text-decoration-line: none;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+
+

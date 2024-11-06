@@ -1,0 +1,39 @@
+
+* {
+    margin:0;
+    font-family: sans-serif;
+}
+
+ul {
+    background-color: #6b7dc0;
+    padding-top:25px; /* liste hat standardmäßig 40px links */
+   /* text-align: center;*/
+}
+
+ul li {
+    /*display: contents;*/
+    width: 250px;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+ul li a {
+    color: #52764f;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+h1 {
+    margin:2rem;
+    color: #231888;
+}
+
+.color1{background-color: #FBFBDF;}
+.color1:hover {transform: rotate(20deg);}
+
+.color2{background-color: burlywood;}
+.color2:hover {transform: rotate(20deg);}
+
+.color3{background-color: #d79595;}
+.color3:hover {transform: rotate(20deg);}

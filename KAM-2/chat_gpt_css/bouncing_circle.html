@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bouncing Ball Animation</title>
+  <style>
+    .ball {
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      border: solid 6px darkred;
+      border-radius: 50%;
+      position: relative;
+      animation: bounce 4s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        left: 0;
+      }
+      50% {
+        left: calc(100vw - 50px);
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="ball"></div>
+</body>
+</html>

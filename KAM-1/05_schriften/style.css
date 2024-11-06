@@ -1,0 +1,41 @@
+/* dancing-script-regular - latin */
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('fonts/dancing-script-v24-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('fonts/dancing-script-v24-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-100 - latin */
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-v30-latin-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('fonts/roboto-v30-latin-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* audiowide-regular - latin */
+@font-face {
+    font-family: 'Audiowide';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('fonts/audiowide-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/audiowide-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+    max-width: 90%; /* 800px */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+h1 {
+    font-family: 'Audiowide', sans-serif;
+    /*font-size: 4em;*/
+    font-size: 32px;
+}
+
+s

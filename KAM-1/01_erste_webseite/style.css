@@ -1,0 +1,29 @@
+body {
+    font: 1rem Verdana;
+    margin: 20px;
+}
+
+nav {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font: italic 4em Georgia;
+    color: rgb(119, 36, 173);
+}
+
+main {
+    text-align: justify;
+    line-height: 25px;
+}
+
+img {
+    /* wrapping text around an image */
+    float: left;
+    margin-right: 20px;
+}
+
+hr {
+    margin: 20px;
+}

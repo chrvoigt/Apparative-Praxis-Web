@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Document</title>
+
+    <style>
+        body {
+            font: 1em Lucida, sans-serif;
+        }
+
+        .flex_container {
+            display: flex;
+            align-content: space-evenly; /* vertically */
+            justify-content: flex-start; /* horizontally */
+            flex-wrap: wrap;
+            padding: 50px;
+            /* container sichtbar machen */
+            height: 60vh;
+            border: dotted 3px lightgrey;
+            border-radius: 5%;
+        }
+        .flex_kreis {
+            display:  flex;
+            align-items: center; /* vertically */
+            justify-content: center; /* horizontally */
+            border-radius: 40%;
+            width: 150px;
+            height: 100px;
+            border: dashed 3px green;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+<div class = "flex_container">
+    <div class="flex_kreis"> Thema A </div>
+    <div class="flex_kreis"> Thema B </div>
+    <div class="flex_kreis"> Thema C </div>
+    <div class="flex_kreis"> Thema D </div>
+    <div class="flex_kreis"> Thema E </div>
+</div>
+
+
+</body>
+</html>

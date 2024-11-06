@@ -1,0 +1,36 @@
+
+table {
+    /* Rahmen benachbarter Zellen fällt zusammen */
+    border-collapse: collapse;
+    border: solid rgba(187, 187, 187, 0.7) 2px;
+    font-family: sans-serif;
+}
+
+th {
+    padding: 2%;
+}
+
+td {
+    width: 10rem;
+    padding: 4%;
+    border-bottom:dotted rgba(187, 187, 187, 0.7) 1px;
+}
+
+/* pseudo-selektoren */
+/* tr:nth-child(odd)  */
+tr {
+    background-color: rgba(246, 250, 237, 0.98);
+}
+
+td:nth-child(2) {
+    width: 25rem;
+    background-color: #faf1d6;
+    color: #930011;
+    text-align: justify;
+}
+
+td>img {
+    width: 22rem;
+}
+
+

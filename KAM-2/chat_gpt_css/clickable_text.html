@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<!--
+(1) add a text within the first box saying 'GAMES'
+(2) add vertical text orientation >> rotates entire word with transform
+(3) display the word vertically but keep the letter in horizontal orientation
+>> use of 'text-mode' and 'text-orientation'
+(4) when the mouse hovers over the clickable areas the text color and size should change to blue
+>> how can we trigger changes within the box >> combining class names with space seperators
+(5) using color-constants in CSS to facilitate color experimentation
+>>
+-->
+
+
+<head>
+    <title>Clickable Areas</title>
+    <style>
+        /* Define CSS variables for color constants */
+        :root {
+            --text-box-color: rgb(189, 50, 41);
+            --background-color: rgba(129, 147, 119, 0.71);
+        }
+
+        /* CSS for container */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            height: 50vh;
+        }
+
+        /* CSS for clickable areas */
+        .clickable-area {
+            width: 200px;
+            height: 200px;
+            background-color: var(--background-color);
+            border-radius: 10px;
+            margin: auto;
+            border: 1px solid #E9E9E9;
+            cursor: pointer;
+            transition: all 1s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Monospace, sans-serif;
+            position: relative;
+            top: 50px;
+        }
+
+        /* rotates the entire word
+        .box-text {
+            transform: rotate(-90deg);
+        }
+         */
+
+        .box-text {
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: var(--text-box-color);
+        }
+
+        .clickable-area:hover {
+            background-color: var(--text-box-color);
+        }
+
+        .clickable-area:hover .box-text {
+            color: white;
+            font-size: 1.4rem;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="clickable-area">
+        <a class="box-text" href="other.html"> GAMES </a>
+    </div>
+    <div class="clickable-area">
+        <a class="box-text" href="other.html"> GAMING </a>
+    </div>
+    <div class="clickable-area" >
+        <a class="box-text" style="font-size:50px" href="other.html"> GAMIFIED </a>
+    </div>
+</div>
+</body>
+</html>

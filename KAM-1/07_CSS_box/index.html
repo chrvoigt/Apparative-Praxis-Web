@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Box</title>
+    <style>
+        .text-box {
+            width: 300px; /* fixer content Bereich */
+            height: 200px;
+            background-color: rgba(187, 187, 187, 0.7);
+
+            padding:40px 60px; /* additiv */
+            border: 10px dashed #737f6b; /* additiv, wir sind bei 440px */
+            margin: auto;
+            margin-top: 100px;
+
+            overflow: hidden; /* wenn die box für den Text zu klein wird */
+        }
+
+    </style>
+</head>
+<body>
+
+<div style="display:flex;">
+<div class="text-box">
+    <b>Meine erste Textbox 300 x 200
+    Lorem60 </b>ipsum dolor sit amet, consectetur adipisicing elit. Commodi eligendi fugiat harum in ipsa, maxime molestiae,
+    mollitia placeat porro quisquam sed, vel voluptas. A ad alias autem consectetur debitis delectus deserunt dicta
+    earum eius eligendi exercitationem, hic in, ipsa, itaque magni maiores maxime natus nemo officia pariatur placeat
+    quaerat quia quidem quo ratione sint tenetur ullam veniam veritatis vero vitae.
+</div>
+
+<div class="text-box">
+    <b>Meine erste Textbox 300 x 200
+        Lorem60 </b>ipsum dolor sit amet, consectetur adipisicing elit. Commodi eligendi fugiat harum in ipsa, maxime molestiae,
+    mollitia placeat porro quisquam sed, vel voluptas. A ad alias autem consectetur debitis delectus deserunt dicta
+    earum eius eligendi exercitationem, hic in, ipsa, itaque magni maiores maxime natus nemo officia pariatur placeat
+    quaerat quia quidem quo ratione sint tenetur ullam veniam veritatis vero vitae.
+</div>
+</div>
+
+</body>
+</html>
