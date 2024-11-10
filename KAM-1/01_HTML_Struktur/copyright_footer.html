@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer with Copyright</title>
+    <style>
+        /* Basic footer styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        /* Optional: Style for copyright symbol and year */
+        .footer-content {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Styling for links in the footer */
+        footer a {
+            color: #aaa;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Footer Section -->
+<!-- Das Jahr wird hier automatisch per Javascript eingesetzt-->
+<footer>
+    <div class="footer-content">
+        <span>&copy; <span id="year"></span> Your Company Name. All rights reserved.</span>
+        <span>|</span>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+    </div>
+</footer>
+
+<script>
+    // Set the current year dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Beispiele</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+        .container {
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            margin-bottom: 20px;
+        }
+        .container > div {
+            background-color: cornflowerblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .description {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        /* Flexbox Beispiele */
+        .flex-row {
+            flex-direction: row;
+        }
+        .flex-column {
+            flex-direction: column;
+        }
+        .flex-center {
+            justify-content: center;
+            align-items: center;
+        }
+        .flex-space-between {
+            justify-content: space-between;
+        }
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+
+<h1>CSS Flexbox Beispiele</h1>
+
+<!-- Beispiel 1: Flex-Richtung (Row) -->
+<div class="description">Beispiel 1: Standardrichtung (Row) - Die Elemente sind in einer Zeile angeordnet.</div>
+<div class="container flex-row">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+    <div>Item 4</div>
+    <div>Item 5</div>
+</div>
+
+<!-- Beispiel 2: Flex-Richtung (Column) -->
+<div class="description">Beispiel 2: Richtung Column - Die Elemente sind in einer Spalte angeordnet.</div>
+<div class="container flex-column">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+    <div>Item 4</div>
+    <div>Item 5</div>
+</div>
+
+<!-- Beispiel 3: Zentrierung -->
+<div class="description">Beispiel 3: Zentrierung - Die Elemente werden sowohl horizontal als auch vertikal zentriert.</div>
+<div class="container flex-center" style="height: 200px;">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+    <div>Item 4</div>
+    <div>Item 5</div>
+</div>
+
+<!-- Beispiel 4: Verteilung mit Space-Between -->
+<div class="description">Beispiel 4: Verteilung mit Space-Between - Die Elemente werden gleichmäßig verteilt mit Platz dazwischen.</div>
+<div class="container flex-space-between">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+    <div>Item 4</div>
+    <div>Item 5</div>
+</div>
+
+<!-- Beispiel 5: Flex-Wrap -->
+<div class="description">Beispiel 5: Flex-Wrap - Die Elemente umbrechen in eine neue Zeile, wenn der Platz begrenzt ist.</div>
+<div class="container flex-wrap" style="width: 300px;">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+    <div>Item 4</div>
+    <div>Item 5</div>
+</div>
+
+</body>
+</html>

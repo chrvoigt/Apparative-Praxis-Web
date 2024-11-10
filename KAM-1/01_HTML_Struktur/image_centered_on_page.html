@@ -1,0 +1,38 @@
+<head>
+    <style>
+        img {
+            width: 40px;
+            /*width: 40px !important;*/
+        }
+
+        .rahmen {
+            width: 400px;
+            height: 400px;
+            display: flex;
+            justify-content: center; /* Zentriert das Bild horizontal */
+            align-items: center; /* Zentriert das Bild vertikal */
+            background-color: black;
+            border-radius: 20px;
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+<!-- Style im Tag überschreibt Style-Angaben aus dem header, ausser es wird !important verwendet -->
+<div class=rahmen>
+    <img alt="Giraffe" src="images/giraffe.svg" style="width:150px;">
+</div>
+
+
+</body>
