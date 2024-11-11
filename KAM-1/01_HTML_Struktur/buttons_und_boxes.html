@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>test</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 150px;
+            font-family: "Apple SD Gothic Neo", sans-serif;
+        }
+
+        p::first-letter {
+            font-size: 300%;
+            font-weight: bolder;
+            font-family: "Baskerville", serif;
+            color: darkolivegreen;
+        }
+
+        .button {
+            background-color: darkslategrey;
+            transition: background-color 1s ease; /* Übergangsdauer und Timing */
+            color: white;
+            padding: 10px 20px;
+            border: 5px solid darkorange;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 50%;
+            text-align: center;
+        }
+
+        .centered {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .button:hover {
+            background-color: #bb3fbf;
+        }
+
+        .tooltip-link {
+            position: relative;
+            text-decoration: none;
+            color: darkred;
+            cursor: pointer;
+            visibility: visible;
+        }
+
+        .tooltip-link .tooltip-text {
+            visibility: hidden;
+            width: 200px; /* Breite des Tooltips */
+            background-color: darkslategrey;
+            color: #fff;
+            text-align: center;
+            padding: 8px;
+            border-radius: 20px;
+            position: absolute;
+            bottom: 125%; /* Positionierung über dem Link */
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        /* Tooltip anzeigen bei Hover */
+        .tooltip-link:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            padding: 100px;
+            border: 30px solid darkorange;
+            border-width: 10px 30px 10px 30px;
+            margin: 100px;
+            background-color: darkslategrey;
+            color: whitesmoke;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+<h1>Überschrift 1</h1>
+<p>
+    <a class="tooltip-link"
+       href="https://soz-kult.hs-duesseldorf.de/personen/voigt/themen-f%C3%BCr-bachelor-und-masterarbeiten#:~:text=Digitale%20Spiele, Turbokapitalismus">
+        Page B
+        <span class="tooltip-text">Dies ist eine Erklärung für den Link.</span>
+    </a>
+</p>
+<div class="button">Call me a button!</div>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate illo molestias non numquam sed? Consequatur
+    deleniti dolorem minus nihil praesentium repellendus soluta.
+</p>
+<p>
+    Dolor sit amet, consectetur adipisicing elit. Cupiditate illo molestias non numquam sed? Consequatur
+    deleniti dolorem minus nihil praesentium repellendus soluta.
+</p>
+
+<div class="box">
+    200 x 100 box: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum doloremque dolores ex excepturi in ipsa
+    laborum minima placeat quos repellat repellendus, voluptate.
+</div>
+<div class="box">
+    200 x 100 box
+</div>
+<div class="box">
+    200 x 100
+    <div class=centered>
+        <div class="button">Call me a button!</div>
+    </div>
+</div>
+<ol>
+    <li>Item of choice</li>
+    <li>Item of choice</li>
+    <li>Item of choice</li>
+    <li>Atem of choice</li>
+</ol>
+
+
+</body>
+</html>

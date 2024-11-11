@@ -5,22 +5,23 @@
             /*width: 40px !important;*/
         }
 
-        .rahmen {
-            width: 400px;
-            height: 400px;
-            display: flex;
-            justify-content: center; /* Zentriert das Bild horizontal */
-            align-items: center; /* Zentriert das Bild vertikal */
-            background-color: black;
-            border-radius: 20px;
-        }
-
         body, html {
             height: 100%;
             margin: 0;
+
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: center; /* Zentriert den Rahmen vertikal */
+        }
+        .rahmen {
+            width: 400px;
+            height: 400px;
+            background-color: black;
+            border-radius: 20px;
+
+            display: flex;
+            justify-content: center; /* Zentriert das Bild horizontal */
+            align-items: center; /* Zentriert das Bild vertikal */
         }
 
 

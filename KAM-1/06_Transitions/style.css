@@ -4,14 +4,16 @@
     font-family: sans-serif;
 }
 
+
 ul {
     background-color: #6b7dc0;
+    list-style: none;
     padding-top:25px; /* liste hat standardmäßig 40px links */
-   /* text-align: center;*/
+    text-align: center;
 }
 
 ul li {
-    /*display: contents;*/
+    display: inline-block;
     width: 250px;
     font-size: 1.5rem;
     padding: 20px;
@@ -21,6 +23,8 @@ ul li a {
     color: #52764f;
     text-decoration: none;
     text-align: center;
+
+
 }
 
 
@@ -28,6 +32,11 @@ h1 {
     margin:2rem;
     color: #231888;
 }
+
+.color1, .color2, .color3 {
+    transition: transform 0.3s, scale 0.7s, opacity 0.4s;
+}
+
 
 .color1{background-color: #FBFBDF;}
 .color1:hover {transform: rotate(20deg);}
