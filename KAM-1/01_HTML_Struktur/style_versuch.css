@@ -1,0 +1,15 @@
+
+* {
+    margin: 0;
+}
+
+body {
+    padding: 150px;
+    font-weight: lighter;
+    font-size: xx-large;
+    font-family: sans-serif;
+}
+h1 {
+    color: #ff00f2;
+    margin-bottom: 40px;
+}

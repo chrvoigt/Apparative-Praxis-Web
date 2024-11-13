@@ -35,8 +35,8 @@ header {
 .rund {
     display: inline-block;
 
-    width: 70px;
-    height: 70px;
+    width: 140px;
+    height: 140px;
 
     border-radius:50%;
     /*border-width: 5px;*/
