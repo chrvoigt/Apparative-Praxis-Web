@@ -6,27 +6,45 @@
 </head>
 
 <style>
-    video {
-        /* damit das ganze Video sichtbar ist, hier im Hochformat */
+    body {
         height: 100vh;
     }
 
+    .page {
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+    }
+
     h1 {
-        color: whitesmoke;
-        font-size: 2em;
+        color: #fdcf00;
+        font-size: 1em;
         font-family: fantasy;
-        margin: 1em;
-        position: absolute;
+        width: 30%;
+        border: 1px solid lightgrey;
+        text-align: center;
+    }
+
+    video {
+        /*damit das ganze Video sichtbar ist, hier im Hochformat */
+        height: 200px;
+        width: 200px;
     }
 
 </style>
-<body>
-<h1>Über den Wolken ... </h1>
+<body class=page>
 
+<h1>Über den Wolken ...</h1>
+
+<!-- img ist kein 'Block Tag' daher wird ein 'div' benötigt -->
+<div>
+    <img height="200px" src="nasenfisch.jpeg" width="auto" width="20%"/>
+</div>
+
+<!-- Atribute per Help erkunden ..autoplay, -->
 <video controls muted>
-    <source src="bier.mp4">
+    <source src="voegel.mp4">
 </video>
-
 
 </body>
 </html>

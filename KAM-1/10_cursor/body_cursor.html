@@ -3,25 +3,36 @@
 <head>
     <meta charset=”utf-8″>
     <title>Cursor Test</title>
-    <meta name="description" content="This is the description that search engines will display. Aim for 145-155
-          characters.">
+    <meta content="This is the description that search engines will display. Aim for 145-155
+          characters." name="description">
 
     <style>
         body {
-            padding:5%;
-            /* possible limitation in Windows with max 32x32 */
-            cursor:  url(hat.png) 20 20, crosshair;
-            cursor:  url(chicken.png) 20 20, crosshair;
+            padding: 20%;
+            /* Browserabhängig - possible limitation in Windows with max 32x32 */
+            /*beispiele: https://www.freeiconspng.com/images/cursor-png */
+            /* 20 20 ist the hotspot of the cursor, might need adjustment */
+            cursor: url(hat.png) 20 20, crosshair;
+            cursor: url(chicken.png) 20 20, crosshair;
+            cursor: url(cursor-hand.png) 30 0, crosshair;
             /* ... für einen Fragezeichen Cursor */
             /*10_cursor: help;*/
             height: 100vh;
             width: 100vw;
-            background-color: rgba(187, 187, 187, 0.7);
+            background-color: rgba(141, 66, 190, 0.25);
         }
 
-        a{
+        a {
             text-decoration: none;
             color: #584444;
+        }
+
+        hr {
+            height: 20px;
+            background-color: rgba(141, 66, 190, 0.81);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            border: none;
         }
 
     </style>
@@ -30,10 +41,10 @@
 
 <body>
 <h1> Catch me if you
-    <a href="#"> can  ... </a>
-    <img src="hat.png" alt="" width="5%">
+    <a href="#"> can ... </a>
+    <img alt="" src="hat.png" width="5%">
 </h1>
-
 <hr>
+
 </body>
 </html>

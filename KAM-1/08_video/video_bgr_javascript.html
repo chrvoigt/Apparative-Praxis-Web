@@ -11,20 +11,28 @@
         body {
             margin: 0;
             font-family: Arial;
-            font-size: 17px;
+            font-size: large;
         }
 
+        .menu {
+            width: 100%;
+            color: white;
+            border: 1px solid white;
+        }
+
+        /* z-index ist wichtig, da sonst das Video eine möglich Navigation überlappen würde */
         #myVideo {
             position: fixed;
             right: 0;
             bottom: 0;
             min-width: 100%;
             min-height: 100%;
+            z-index: -100;
         }
 
         .content {
             position: fixed;
-            bottom: 0;
+            bottom: 10%;
             background: rgba(0, 0, 0, 0.5);
             color: #f1f1f1;
             width: 100%;
@@ -36,7 +44,7 @@
             font-size: 18px;
             padding: 10px;
             border: none;
-            background: #000;
+            background: #396436;
             color: #fff;
             cursor: pointer;
         }
@@ -48,21 +56,23 @@
         }
     </style>
 </head>
-<body>
 
+<body>
 <video id="myVideo" loop muted>
     <source src="nature.mp4" type="video/mp4">
     Your browser does not support HTML5 video.
 </video>
 
+<h1 class="menu">Placeholder for menu</h1>
+
 <div class="content">
+    <button id="myBtn" onclick="myFunction()">Start</button>
     <h1>One Planet</h1>
     <p>
         "Schütze deine Erde" ist ein Aufruf zur Solidarität, zur Zusammenarbeit und zur Einheit. Es erinnert uns daran,
         dass wir nur eine Erde haben und dass es unsere Pflicht ist, sie zu bewahren. Jeder Einzelne kann einen Beitrag
         leisten, sei es durch Recycling, den Einsatz erneuerbarer Energien oder die Unterstützung von
         Umweltorganisationen.</p>
-    <button id="myBtn" onclick="myFunction()">Start</button>
 </div>
 
 <script>
